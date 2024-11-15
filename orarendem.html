@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Órarendem</title>
+
+    <style>
+        .bg_rgba {
+            background-image: url(hatter.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+            
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(51, 24, 3);
+
+        }
+
+        
+
+        br {
+            display: block;
+            content: "";
+        }
+
+        .orarend-tablazat {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, tr, td {
+            border-width: 1px;
+            border-style: solid;
+        }
+
+
+        .tablazat_oraszam {
+            font-weight: bold;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+        .tablazat_elsosor {
+            font-weight: bold;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+        .tablazat_csengetes {
+            border-width: 2px;
+            border-style: solid;
+        }
+
+        .oldalvaz {
+            width: 60%;
+            
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(255, 255, 255);
+            border: 5px rgb(79, 38, 5) solid;
+            border-radius: 10px;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .szerkezet_szoveg {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        .navigacio_gomb {
+            border: 2px rgb(79, 38, 5) solid;
+            background-color: rgb(148, 72, 10);
+            border-radius: 3px;
+            color: white;
+            font-weight: bold;
+            height: 100%;
+            width: 90%;
+            padding: 4px;
+
+
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .navigacio_gomb:hover {
+            background-color: rgb(79, 38, 5);
+        }
+
+    </style>
+
+</head>
+<body class="bg_rgba">
+    <div class="oldalvaz">
+        <div class="szerkezet_cim">
+            <br style="height: 5px;">
+            <table style="height: 5px;">
+                <tr style="height: 5px;">
+                    <td style="width: 15%; border: none;"></td>
+                    <td style="width: 70%; border: none;">
+                        <h1 style="text-align: center;">Tanczik Máté weboldala</h1>
+                    </td>
+                    <td style="width: 15%; border: none;">
+                        <img src="kando.jpeg" alt="MSZC Kandó Kálmán Informatikai Technikum logó" height="60%" width="60%" style="display: block;margin: auto;">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="szerkezet_menu">
+            
+            <table style="width: 90%;padding: 0;margin-left: auto;margin-right: auto;border-spacing: 5px;">
+                <tr style="padding: 0;border: none;">
+
+
+                    <td style="width: 10%;border: none;">
+                        <a href="index.html" class="navigacio_gomb">Rólam</a>
+                    </td>
+
+                    <td style="width: 10%;border: none;">
+                        <a href="orarendem.html" class="navigacio_gomb">Órarendem</a>
+                    </td>
+                    <td style="width: 10%;border: none;"></td>
+                    <td style="width: 10%;border: none;"></td>
+                    <td style="width: 10%;border: none;"></td>
+                    <td style="width: 10%;border: none;"></td>
+                    <td style="width: 10%;border: none;"></td>
+                    <td style="width: 10%;border: none;"></td>
+                    <td style="width: 10%;border: none;">
+                        <a href="https://tanczikmate.github.io/" class="navigacio_gomb">LÁEV</a>
+                    </td>
+
+
+
+
+
+                </tr>
+            </table>
+
+            <hr style="border: none;background-color: rgb(79, 38, 5);height: 5px;padding: 0;margin: 0;">
+        
+            <br style="height: 10px;">
+
+        </div>
+
+        <div class="szerkezet_szoveg">
+            <h2 id="orarendem" style="margin: 5px;">Órarendem</h2>
+
+            <table style="border: 2px solid black; width: 95%;margin-left: auto;margin-right: auto;" class="orarend-tablazat">
+                <tr>
+                    <td class="tablazat_elsosor">Óra</td>
+                    <td class="tablazat_elsosor">Idő</td>
+                    <td class="tablazat_elsosor">Hétfő</td>
+                    <td class="tablazat_elsosor">Kedd</td>
+                    <td class="tablazat_elsosor">Szerda</td>
+                    <td class="tablazat_elsosor">Csütörtök</td>
+                    <td class="tablazat_elsosor">Péntek</td>
+                </tr>
+                
+                <tr>
+                    <td class="tablazat_oraszam">0.</td>
+                    <td class="tablazat_csengetes">7<sup>15</sup> - 8<sup>00</sup></td>
+                    <td class="tablazat_ora"></td>
+                    <td class="tablazat_ora" rowspan="2" title="Deményi Norbert Szabolcs">Testnevelés</td>
+                    <td class="tablazat_ora"></td>
+                    <td class="tablazat_ora" title="Vasók Krisztián">Magyar nyelv</td>
+                    <td class="tablazat_ora" title="Durda Szilvia">Angol nyelv</td>
+                </tr>
+
+                <tr>
+                    <td class="tablazat_oraszam">1.</td>
+                    <td class="tablazat_csengetes">8<sup>00</sup> - 8<sup>45</sup></td>
+                    <td class="tablazat_ora" rowspan="3" title="Héczei Ádám">Informatikai és távközlési alapok</td>
+
+                    <td class="tablazat_ora" title="Halászné Kiss Melinda Ottilia">Magyar irodalom</td>
+                    <td class="tablazat_ora" title="Takács Gábor">Történelem</td>
+                    <td class="tablazat_ora" title="Vasók Krisztián">Magyar nyelv</td>
+                </tr>
+
+                <tr>
+                    <td class="tablazat_oraszam">2.</td>
+                    <td class="tablazat_csengetes">8<sup>55</sup> - 9<sup>40</sup></td>
+                    
+                    <td class="tablazat_ora" title="Halászné Kiss Melinda Ottilia">Magyar irodalom</td>
+                    <td class="tablazat_ora" title="Deményi Norbert Szabolcs">Testnevelés</td>
+                    <td class="tablazat_ora" title="Dobos Zoltán">Honvédelem</td>
+                    <td class="tablazat_ora" title="Simainé Nagy Brigitta">Matematika</td>
+                </tr>
+
+                <tr>
+                    <td class="tablazat_oraszam">3.</td>
+                    <td class="tablazat_csengetes">9<sup>50</sup> - 10<sup>35</sup></td>
+                    
+                    <td class="tablazat_ora" title="Simainé Nagy Brigitta">Matematika</td>
+                    <td class="tablazat_ora" title="Péterffy Gáspár Mátyás">Komplex természettudomány</td>
+                    <td class="tablazat_ora" title="Durda Szilvia">Angol nyelv</td>
+                    <td class="tablazat_ora" title="Elek István">IKT projektmunka</td>
+                </tr>
+
+                <tr>
+                    <td class="tablazat_oraszam">4.</td>
+                    <td class="tablazat_csengetes">10<sup>45</sup> - 11<sup>30</sup></td>
+                    <td class="tablazat_ora" title="Simainé Nagy Brigitta">Matematika</td>
+                    <td class="tablazat_ora" title="Durda Szilvia">Osztályfőnöki</td>
+                    <td class="tablazat_ora" rowspan="2" title="Gáll Rita Beáta">Programozási alapok</td>
+                    <td class="tablazat_ora" title="Simainé Nagy Brigitta">Matematika</td>
+                    <td class="tablazat_ora" title="Takács Gábor">Történelem</td>
+                </tr>
+
+                <tr>
+                    <td class="tablazat_oraszam">5.</td>
+                    <td class="tablazat_csengetes">11<sup>40</sup> - 12<sup>25</sup></td>
+                    <td class="tablazat_ora" title="Durda Szilvia">Angol nyelv</td>
+                    <td class="tablazat_ora" rowspan="2" title="Elek István">Digitális kultúra</td>
+
+                    <td class="tablazat_ora" title="Péterffy Gáspár Mátyás">Komplex természettudomány</td>
+                    <td class="tablazat_ora" title="Péterffy Gáspár Mátyás">Komplex természettudomány</td>
+                </tr>
+
+                <tr>
+                    <td class="tablazat_oraszam">6.</td>
+                    <td class="tablazat_csengetes">12<sup>45</sup> - 13<sup>30</sup></td>
+                    <td class="tablazat_ora" title="Deményi Norbert Szabolcs">Testnevelés</td>
+
+                    <td class="tablazat_ora" title="Sándorné Feke Réka">IKT projektmunka</td>
+                    <td class="tablazat_ora"></td>
+                    <td class="tablazat_ora"></td>
+                </tr>
+
+                <tr>
+                    <td class="tablazat_oraszam">7.</td>
+                    <td class="tablazat_csengetes">13<sup>35</sup> - 14<sup>20</sup></td>
+                    <td class="tablazat_ora" title="Takács Gábor">Történelem</td>
+                    <td class="tablazat_ora" title="Durda Szilvia">Angol nyelv</td>
+                    <td class="tablazat_ora" title="Durda Szilvia">Angol nyelv</td>
+                    <td class="tablazat_ora"></td>
+                    <td class="tablazat_ora"></td>
+                </tr>
+
+                <tr>
+                    <td class="tablazat_oraszam">8.</td>
+                    <td class="tablazat_csengetes">14<sup>25</sup> - 15<sup>10</sup></td>
+                    <td class="tablazat_ora" title="Halászné Kiss Melinda Ottilia">Magyar irodalom</td>
+                    <td class="tablazat_ora"></td>
+                    <td class="tablazat_ora"></td>
+                    <td class="tablazat_ora"></td>
+                    <td class="tablazat_ora"></td>
+                </tr>
+
+            </table>
+            <br style="height: 10px;">
+
+        </div>
+        <br style="height: 700px;">
+        <p style="text-align: right;color: white">A weboldalt készítette: Tanczik Máté</p>
+
+</body>
+</html>
