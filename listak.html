@@ -3,49 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listák</title>
+    <link rel="icon" href="img/kkszki_logo_dark.png" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="img/kkszki_logo_light.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
 
-    <style>
-        .navigacio_gomb {
-            border: 2px rgb(79, 38, 5) solid;
-            background-color: rgb(148, 72, 10);
-            border-radius: 3px;
-            color: white;
-            font-weight: bold;
-            padding: 4px;
+    <link rel="stylesheet" href="src/style.css">
 
+    
+    <title>TMWeb | Listák</title>
 
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .navigacio_gomb:hover {
-            background-color: rgb(79, 38, 5);
-        }
-
-    </style>
 </head>
-<body>
-    <nav style="text-align:center">
-        <a href="index.html" class="navigacio_gomb">Főoldal</a>
-        <a href="orarendem.html" class="navigacio_gomb">Órarendem</a>
-        <a href="keplink.html" class="navigacio_gomb">Ősz feladat</a>
-        <a href="listak.html" class="navigacio_gomb">Listák</a>
-    </nav>
-    <h2>Kedvenc hobbijaim:</h2>
-    <ul>
-        <li>tömegközlekedés fotózás</li>
-        <li>programozás / informatika</li>
-        <li>videojátékok</li>
-    </ul>
-    <h2>Kedvenc tantárgyaim:</h2>
-    <ol>
-        <li>IKT Projektmunka I.</li>
-        <li>Programozási alapok</li>
-        <li>Informatikai és távközlési alapok I.</li>
-    </ol>
 
+<body>
+    <div class="frame">
+        <header>
+
+            <table>
+                <tr>
+                    <td class="htd1"></td>
+                    <td class="htd2">
+                        <h1 class="center">Tanczik Máté weboldala</h1>
+                    </td>
+                    <td class="htd1">
+                        <a href="https://kkszki.hu"><img src="img/kkszki_logo_dark.png" alt="kkszki_logo_dark" id="header-logo"></a>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- --------------- NAVIGÁCIÓS MENÜ ------------- -->
+            <nav>
+                <a href="index.html" class="navmenu">Főoldal</a>
+                <a href="orarendem.html" class="navmenu">Órarendem</a>
+                <a href="keplink.html" class="navmenu">Ősz feladat</a>
+                <a href="listak.html" class="navmenu">Listák</a>
+            </nav>
+            <!-- --------------------------------------------- -->
+
+            <hr>
+        </header>
+
+        <section>
+            <h2>Kedvenc hobbijaim:</h2>
+            <ul>
+                <li>tömegközlekedés fotózás</li>
+                <li>programozás / informatika</li>
+                <li>videojátékok</li>
+            </ul>
+            <h2>Kedvenc tantárgyaim:</h2>
+            <ol>
+                <li>IKT Projektmunka I.</li>
+                <li>Programozási alapok</li>
+                <li>Informatikai és távközlési alapok I.</li>
+            </ol>
+        </section>
+        
+    </div>
+
+    <footer>
+        <p>A weboldalt készítette: Tanczik Máté</p>
+    </footer>
+    
 
 </body>
 </html>

@@ -3,148 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanczik Máté weboldala - teszt</title>
-    <style>
-        .bg_rgba {
-            background-image: url(img/hatter.jpg);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-attachment: fixed;
-            
-            font-family:Arial, Helvetica, sans-serif;
-            color: rgb(51, 24, 3);
+    <link rel="icon" href="img/kkszki_logo_dark.png" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="img/kkszki_logo_light.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
 
-        }
-
-        
-
-        br {
-            display: block;
-            content: "";
-        }
-
-        .orarend-tablazat {
-            border: 1px solid black;
-            border-collapse: collapse;
-            text-align: center;
-        }
-
-        th, tr, td {
-            border-width: 1px;
-            border-style: solid;
-        }
-
-
-        .tablazat_oraszam {
-            font-weight: bold;
-            border-width: 2px;
-            border-style: solid;
-        }
-
-        .tablazat_elsosor {
-            font-weight: bold;
-            border-width: 2px;
-            border-style: solid;
-        }
-
-        .tablazat_csengetes {
-            border-width: 2px;
-            border-style: solid;
-        }
-
-        .oldalvaz {
-            width: 60%;
-            
-            margin-left: auto;
-            margin-right: auto;
-            background-color: rgb(255, 255, 255);
-            border: 5px rgb(79, 38, 5) solid;
-            border-radius: 10px;
-        }
-
-        p {
-            margin: 0;
-            padding: 0;
-        }
-
-        .szerkezet_szoveg {
-            width: 95%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-
-        .navigacio_gomb {
-            border: 2px rgb(79, 38, 5) solid;
-            background-color: rgb(148, 72, 10);
-            border-radius: 3px;
-            color: white;
-            font-weight: bold;
-            padding: 4px;
-
-
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .navigacio_gomb:hover {
-            background-color: rgb(79, 38, 5);
-        }
-
-    </style>
+    <link rel="stylesheet" href="src/style.css">
     
-    
+    <title>TMWeb | Főoldal</title>
 
 </head>
-<body class="bg_rgba">
-    <div class="oldalvaz">
-        <div class="szerkezet_cim">
-            <br style="height: 5px;">
-            <table style="height: 5px;">
-                <tr style="height: 5px;">
-                    <td style="width: 15%; border: none;"></td>
-                    <td style="width: 70%; border: none;">
-                        <h1 style="text-align: center;">Tanczik Máté weboldala</h1>
+
+<body>
+    <div class="frame">
+        <header>
+
+            <table>
+                <tr>
+                    <td class="htd1"></td>
+                    <td class="htd2">
+                        <h1 class="center">Tanczik Máté weboldala</h1>
                     </td>
-                    <td style="width: 15%; border: none;">
-                        <img src="img/kando.jpeg" alt="MSZC Kandó Kálmán Informatikai Technikum logó" height="60%" width="60%" style="display: block;margin: auto;">
+                    <td class="htd1">
+                        <a href="https://kkszki.hu"><img src="img/kkszki_logo_dark.png" alt="kkszki_logo_dark" id="header-logo"></a>
                     </td>
                 </tr>
             </table>
-        </div>
 
-        <div class="szerkezet_menu">
-            
-            <nav style="text-align:center">
-                <a href="index.html" class="navigacio_gomb">Főoldal</a>
-                <a href="orarendem.html" class="navigacio_gomb">Órarendem</a>
-                <a href="keplink.html" class="navigacio_gomb">Ősz feladat</a>
-                <a href="listak.html" class="navigacio_gomb">Listák</a>
+            <!-- --------------- NAVIGÁCIÓS MENÜ ------------- -->
+            <nav>
+                <a href="index.html" class="navmenu">Főoldal</a>
+                <a href="orarendem.html" class="navmenu">Órarendem</a>
+                <a href="keplink.html" class="navmenu">Ősz feladat</a>
+                <a href="listak.html" class="navmenu">Listák</a>
             </nav>
-            <br style="height: 3px;">
+            <!-- --------------------------------------------- -->
 
-            <hr style="border: none;background-color: rgb(79, 38, 5);height: 5px;padding: 0;margin: 0;">
-        
-            <br style="height: 10px;">
+            <hr>
+        </header>
 
-        </div>
+        <section>
+            <h2>Rólam</h2>
+            <p id="rolamp">Tanczik Máté vagyok, 14 éves, a Miskolci SZC Kandó Kálmán Informatikai Technikum tanulója. Alsózsolcán élek, ide is jártam általános iskolába, az Alsózsolcai Herman Ottó Általános Iskola és AMI-be. Szeretek fotózni, járni a természetet. Különösen érdekel az informatika és a tömegközlekedés világa.</p>
+            <img src="img/hobbi.png" alt="hobbi" id="hobbikep">
 
-        <div class="szerkezet_szoveg">
-
-
-            <h2 id="rolam" style="margin: 5px;">Rólam</h2>
-            <p style="padding-left: 10px;">Tanczik Máté vagyok, 14 éves, a Miskolci SZC Kandó Kálmán Informatikai Technikum tanulója. Alsózsolcán élek, ide is jártam általános iskolába, az Alsózsolcai Herman Ottó Általános Iskola és AMI-be. Szeretek fotózni, járni a természetet. Különösen érdekel az informatika és a tömegközlekedés világa.</p>
-            <img src="img/tanczik.png" alt="Kép járművekről" style="display: block;margin-left: auto;margin-right: auto;width: 55%;padding: 10px;">
-
-            
-            <br style="height: 10px;">
-
-        </div>
+        </section>
         
     </div>
-    <br style="height: 700px;">
-    <p style="text-align: right;color: white">A weboldalt készítette: Tanczik Máté</p>
+
+    <footer>
+        <p>A weboldalt készítette: Tanczik Máté</p>
+    </footer>
+    
 
 </body>
 </html>
