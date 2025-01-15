@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hét formázása</title>
+    <style>
+        .even-week {
+            background-color: lightblue;
+            color: black;
+        }
+        .odd-week {
+            background-color: lightgreen;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td id="cell1">Cell 1</td>
+            <td id="cell2">Cell 2</td>
+        </tr>
+    </table>
+
+    <script>
+        // Function to get the week number
+        function getWeekNumber(d) {
+            d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+            d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay()||7));
+            var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
+            var weekNo = Math.ceil(( ( (d - yearStart) / 86400000) + 1)/7);
+            return weekNo;
+        }
+
+        // Determine if the week is even or odd
+        var today = new Date();
+        var weekNumber = getWeekNumber(today);
+        var cell1 = document.getElementById("cell1");
+        var cell2 = document.getElementById("cell2");
+
+        if (weekNumber % 2 === 0) {
+            cell1.className = "even-week";
+            cell2.className = "even-week";
+        } else {
+            cell1.className = "odd-week";
+            cell2.className = "odd-week";
+        }
+    </script>
+</body>
+</html>

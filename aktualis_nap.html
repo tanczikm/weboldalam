@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Napi formázás</title>
+    <style>
+        .aktualis_nap {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td class="hetfo">Monday</td>
+            <td class="kedd">Tuesday</td>
+            <td class="szerda">Wednesday</td>
+            <td class="csutortok">Thursday</td>
+            <td class="pentek">Friday</td>
+            <td class="szombat">Saturday</td>
+            <td class="vasarnap">Sunday</td>
+        </tr>
+    </table>
+
+    <script>
+        // Function to get the current day of the week
+        function getCurrentDay() {
+            var days = ["vasarnap", "hetfo", "kedd", "szerda", "csutortok", "pentek", "szombat"];
+            var today = new Date();
+            var currentDay = days[today.getDay()];
+            return currentDay;
+        }
+
+        // Get the current day and apply the class
+        var currentDayClass = getCurrentDay();
+        var cells = document.getElementsByClassName(currentDayClass);
+
+        for (var i = 0; i < cells.length; i++) {
+            cells[i].classList.add("aktualis_nap");
+        }
+    </script>
+</body>
+</html>
