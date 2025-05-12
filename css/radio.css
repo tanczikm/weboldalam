@@ -1,0 +1,39 @@
+.radio-logos img {
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  #volumeControl {
+    width: 200px;
+  }
+  
+  #radioControls {
+    display: none; /* Kezdetben el van rejtve */
+  }
+  
+  #radioSelector {
+    display: block; /* Kezdetben látható */
+  }
+  
+  #radioLogo {
+    margin-top: 20px;
+    width: 100px;
+  }
+  
+
+
+#buttonStopRadio {
+    float: right;
+    display: block;
+
+    border: 2px rgb(79, 38, 5) solid;
+    background-color: rgb(148, 72, 10);
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+}
+
+#buttonStopRadio:hover {
+    background-color: rgb(79, 38, 5);
+}
