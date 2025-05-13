@@ -5,3 +5,6 @@
 "https://icast.connectmedia.hu/4748/mr7.mp3|Dankó Rádió"
 "https://oxygenmusic.hu:8000/oxygenmusic_128|Oxygen Music"
 "https://oxygenmusic.hu:8000/oxygenmagyarzene_128|Oxygen Magyar Zene"
+
+
+ezek a rádiók kellenek
