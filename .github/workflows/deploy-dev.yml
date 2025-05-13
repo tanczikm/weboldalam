@@ -17,15 +17,15 @@ jobs:
 
     - name: weboldalam-dev repo klónozása
       run: |
-        git clone https://x-access-token:${{ secrets.ACTIONS_DEPLOY_KEY }}@github.com/tanczikm/weboldalam-dev.git deploy
+        git clone https://x-access-token:${{ secrets.ACTIONS_DEPLOY_KEY }}@github.com/tanczikm/weboldalam-dev.git temp-deploy
 
     - name: Tartalom másolása a dev repóba
       run: |
-        rsync -av --delete --exclude='.git' ./ deploy/
+        rsync -av --delete --exclude='.git' ./ temp-deploy/
 
     - name: Commit és push a dev repóba
       run: |
-        cd deploy
+        cd temp-deploy
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
         git add .
