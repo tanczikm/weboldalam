@@ -22,7 +22,7 @@ jobs:
 
     - name: Tartalom másolása a dev repóba
       run: |
-        rsync -av --delete --exclude='.git' ./ weboldalam-dev/
+        rsync -av --delete --exclude='.git' --ignore-missing-args ./ weboldalam-dev/
 
     - name: Commit és push a dev repóba
       run: |
