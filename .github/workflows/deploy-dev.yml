@@ -21,9 +21,7 @@ jobs:
     - name: Clone target repo
       run: |
         git clone https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/tanczikm/weboldalam-dev.git deploy
-        rm -rf deploy/*
-        cp -r ./* deploy/
-        cp -r ./.??* deploy/ || true
+        rsync -av --exclude=deploy --exclude='.git' ./ deploy/
 
     - name: Commit and Push to target
       run: |
