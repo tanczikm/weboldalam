@@ -20,10 +20,10 @@ jobs:
 
     - name: Push to dev repository
       run: |
-        git clone https://github.com/YOUR_USERNAME/weboldalam-dev.git deploy-repo
+        git clone https://github.com/tanczikm/weboldalam-dev.git deploy-repo
         rm -rf deploy-repo/*
         cp -r * deploy-repo/
         cd deploy-repo
         git add .
         git commit -m "Auto-deploy from dev branch"
-        git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/YOUR_USERNAME/weboldalam-dev.git main
+        git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/tanczikm/weboldalam-dev.git main
