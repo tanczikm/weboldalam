@@ -1,4 +1,4 @@
-name: Deploy dev branch to dev repo
+name: Deploy dev to weboldalam-dev
 
 on:
   push:
@@ -18,12 +18,16 @@ jobs:
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
 
-    - name: Push to dev repository
+    - name: Clone target repo
       run: |
-        git clone https://github.com/tanczikm/weboldalam-dev.git deploy-repo
-        rm -rf deploy-repo/*
-        cp -r * deploy-repo/
-        cd deploy-repo
+        git clone https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/tanczikm/weboldalam-dev.git deploy
+        rm -rf deploy/*
+        cp -r ./* deploy/
+        cp -r ./.??* deploy/ || true
+
+    - name: Commit and Push to target
+      run: |
+        cd deploy
         git add .
-        git commit -m "Auto-deploy from dev branch"
+        git commit -m "Automatikus deploy a dev branche-ből" || echo "Nincs változás"
         git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/tanczikm/weboldalam-dev.git main
