@@ -15,13 +15,14 @@ jobs:
       with:
         ref: dev
 
-    - name: weboldalam-dev repo klónozása
+    - name: Weboldalam-dev repo törlése és új klónozása
       run: |
-        git clone --single-branch https://x-access-token:${{ secrets.ACTIONS_DEPLOY_KEY }}@github.com/tanczikm/weboldalam-dev.git .
+        rm -rf weboldalam-dev # Töröljük a korábbi klónozott mappát, ha létezik
+        git clone https://x-access-token:${{ secrets.ACTIONS_DEPLOY_KEY }}@github.com/tanczikm/weboldalam-dev.git weboldalam-dev
 
     - name: Tartalom másolása a dev repóba
       run: |
-        rsync -av --delete --exclude='.git' ./ ./weboldalam-dev/
+        rsync -av --delete --exclude='.git' ./ weboldalam-dev/
 
     - name: Commit és push a dev repóba
       run: |
