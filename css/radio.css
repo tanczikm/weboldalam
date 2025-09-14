@@ -1,0 +1,116 @@
+.radio-logos img {
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  #volumeControl {
+    width: 200px;
+    
+  }
+  
+  #radioControls {
+    display: none; /* Kezdetben el van rejtve */
+    float: right;
+  }
+  
+  #radioSelector {
+    display: block; /* Kezdetben látható */
+  }
+  
+
+
+#nowPlaying {
+     text-align: center;
+     margin: auto;
+     border-top: 2px solid rgb(79, 38, 5);
+     border-bottom: 2px solid rgb(79, 38, 5);
+     width: 50%;
+}
+
+#radioLogo {
+     margin-top: 20px;
+     width: 40%;
+     display: inline-block;
+
+     img {
+      width: 90%;
+    }
+}
+
+
+#radioControls {
+    margin: auto;
+    width: 60%;
+    display: none;
+    
+    #controlmenu {
+        display: block;
+        margin: auto;
+        background-color: rgb(204, 204, 204);
+        border-collapse: collapse;
+        border-radius: 3px;
+        width: 50%;
+        padding: 10px;
+        border: 2px solid rgb(79, 38, 5);
+
+        h2, h3 {
+            padding: 0;
+            margin: 0;
+        }
+
+        #vezerlopult {
+            text-align: center;
+            border-bottom: 2px solid rgb(79, 38, 5);
+        }
+
+        h3 {
+            margin-top: 5px;
+        }
+
+        
+        input {
+            display: inline;
+            width: 70%;
+            padding: 0;
+            
+        }
+        span {
+            width: 10%;
+            display: inline;
+            color: black;
+            border: 1px black solid;
+            border-radius: 5px;
+            padding: 5px;
+
+        }
+
+        
+
+        #radioStopButton {
+            
+            display: block;
+            padding: 4px;
+
+            border: 2px rgb(79, 38, 5) solid;
+            background-color: rgb(148, 72, 10);
+            border-radius: 3px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+
+            margin: auto;
+            margin-top: 20px;
+        }
+
+
+        #radioStopButton:hover {
+            background-color: rgb(79, 38, 5);
+        }
+    }
+}
+
+#menudiv {
+    display: flex;
+    align-items: center
+}

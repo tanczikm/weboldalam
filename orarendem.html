@@ -6,8 +6,8 @@
     <link rel="icon" href="img/kkszki_logo_dark.png" type="image/x-icon" media="(prefers-color-scheme: light)">
     <link rel="icon" href="img/kkszki_logo_light.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
 
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="src/orarend.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
     
     <title>TMWeb | Órarendem</title>
 
@@ -34,6 +34,7 @@
                 <a href="index.html" class="navmenu">Főoldal</a>
                 <a href="orarendem.html" class="navmenu">Órarendem</a>
                 <a href="galeria.html" class="navmenu">Galéria</a>
+                <a href="radio.html" class="navmenu">Rádió</a>
                 <a href="keplink.html" class="navmenu">Ősz feladat</a>
                 <a href="listak.html" class="navmenu">Listák</a>
                 <a href="urlap.html" class="navmenu">Űrlap</a>
@@ -44,116 +45,9 @@
         </header>
 
         <section>
-            <a href="orarendem-regi.html" class="navmenu" style="float: right;">Első félév</a>
             <h2>Órarendem</h2>
 
-            <div id="orarend">
-                <table id="orarendtablazat">
-                    <tr>
-                        <td class="tablazat_elsosor">Óra</td>
-                        <td class="tablazat_elsosor">Idő</td>
-                        <td class="tablazat_elsosor">Hétfő</td>
-                        <td class="tablazat_elsosor">Kedd</td>
-                        <td class="tablazat_elsosor">Szerda</td>
-                        <td class="tablazat_elsosor">Csütörtök</td>
-                        <td class="tablazat_elsosor">Péntek</td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="tablazat_oraszam">0.</td>
-                        <td class="tablazat_csengetes">7<sup>15</sup> - 8<sup>00</sup></td>
-
-                        <td class="tablazat_ora" rowspan="2">Matematika</td>
-                        <td class="tablazat_ora">Magyar irodalom</td>
-                        <td class="tablazat_ora"></td>
-                        <td class="tablazat_ora"></td>
-                        <td class="tablazat_ora"></td>
-                    </tr>
-    
-                    <tr>
-                        <td class="tablazat_oraszam">1.</td>
-                        <td class="tablazat_csengetes">8<sup>00</sup> - 8<sup>45</sup></td>
-
-                        <td class="tablazat_ora">Matematika</td>
-                        <td class="tablazat_ora">Történelem</td>
-                        <td class="tablazat_ora" rowspan="2">Digitális kultúra</td>
-                        <td class="tablazat_ora">Angol nyelv</td>
-                    </tr>
-    
-                    <tr>
-                        <td class="tablazat_oraszam">2.</td>
-                        <td class="tablazat_csengetes">8<sup>55</sup> - 9<sup>40</sup></td>
-                        
-                        <td class="tablazat_ora">Angol nyelv</td>
-                        <td class="tablazat_ora" rowspan="3">Informatikai és távközlési alapok </td>
-                        <td class="tablazat_ora">Angol nyelv</td>
-                        <td class="tablazat_ora">Történelem</td>
-                    </tr>
-    
-                    <tr>
-                        <td class="tablazat_oraszam">3.</td>
-                        <td class="tablazat_csengetes">9<sup>50</sup> - 10<sup>35</sup></td>
-                        
-                        <td class="tablazat_ora">Történelem</td>
-                        <td class="tablazat_ora">Testnevelés</td>
-                        <td class="tablazat_ora">Angol nyelv</td>
-                        <td class="tablazat_ora">Komplex természettudomány</td>
-                    </tr>
-    
-                    <tr>
-                        <td class="tablazat_oraszam">4.</td>
-                        <td class="tablazat_csengetes">10<sup>45</sup> - 11<sup>30</sup></td>
-
-                        <td class="tablazat_ora">Magyar irodalom</td>
-                        <td class="tablazat_ora">IKT projektmunka</td>
-                        <td class="tablazat_ora">Magyar nyelv</td>
-                        <td class="tablazat_ora">Munkavállalói ismeretek</td>
-                    </tr>
-    
-                    <tr>
-                        <td class="tablazat_oraszam">5.</td>
-                        <td class="tablazat_csengetes">11<sup>40</sup> - 12<sup>25</sup></td>
-
-                        <td class="tablazat_ora"></td>
-                        <td class="tablazat_ora">Angol nyelv</td>
-                        <td class="tablazat_ora">Komplex természettudomány</td>
-                        <td class="tablazat_ora">Testnevelés</td>
-                        <td class="tablazat_ora">Magyar irodalom</td>
-                    </tr>
-    
-                    <tr>
-                        <td class="tablazat_oraszam">6.</td>
-                        <td class="tablazat_csengetes">12<sup>45</sup> - 13<sup>30</sup></td>
-                        
-                        <td class="tablazat_ora"></td>
-                        <td class="tablazat_ora" rowspan="2">Programozási alapok</td>
-                        <td class="tablazat_ora">Matematika</td>
-                        <td class="tablazat_ora">Osztályfőnöki</td>
-                        <td class="tablazat_ora">Magyar nyelv</td>
-                    </tr>
-    
-                    <tr>
-                        <td class="tablazat_oraszam">7.</td>
-                        <td class="tablazat_csengetes">13<sup>35</sup> - 14<sup>20</sup></td>
-
-                        <td class="tablazat_ora"></td>
-                        <td class="tablazat_ora" rowspan="2" id="honvedelem">Honvédelem</td>
-                        <td class="tablazat_ora">Komplex természettudomány</td>
-                        <td class="tablazat_ora" rowspan="2">Testnevelés</td>
-                    </tr>
-    
-                    <tr>
-                        <td class="tablazat_oraszam">8.</td>
-                        <td class="tablazat_csengetes">14<sup>25</sup> - 15<sup>10</sup></td>
-
-                        <td class="tablazat_ora"></td>
-                        
-                        <td class="tablazat_ora"></td>
-                        <td class="tablazat_ora"></td>
-                    </tr>
-    
-                </table>
-            </div>
+            <img src="img/orarend.jpg" alt="" style="width: 85%;display: block;margin: auto;" class="gallery-image">
 
         </section>
     </div>
@@ -162,24 +56,14 @@
         <p>A weboldalt készítette: Tanczik Máté</p>
     </footer>
 
-    <script>
-        // Function to get the week number
-        function getWeekNumber(d) {
-            d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
-            d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay()||7));
-            var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
-            var weekNo = Math.ceil(( ( (d - yearStart) / 86400000) + 1)/7);
-            return weekNo;
-        }
+    <div id="imgOverlay">
+        <span id="closeBtn">&times;</span>
+        <span id="prevBtn">&#10094;</span>
+        <img id="overlayImg" src="">
+        <span id="nextBtn">&#10095;</span>
+    </div>
 
-        // Determine if the week is even or odd
-        var today = new Date();
-        var weekNumber = getWeekNumber(today);
-        var honvedelem = document.getElementById("honvedelem");
+    <script src="js/gallery-zoom.js"></script>
 
-        if (weekNumber % 2 === 0) {
-            honvedelem.className = "honvedelem-nincs";
-        }
-    </script>
 </body>
 </html>

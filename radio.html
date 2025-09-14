@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/kkszki_logo_dark.png" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="img/kkszki_logo_light.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/radio.css">
+    
+    <title>TMWeb | Rádió</title>
+
+</head>
+
+<body>
+    <div class="frame">
+        <header>
+
+            <table>
+                <tr>
+                    <td class="htd1"></td>
+                    <td class="htd2">
+                        <h1 class="center">Tanczik Máté weboldala</h1>
+                    </td>
+                    <td class="htd1">
+                        <a href="https://kkszki.hu"><img src="img/kkszki_logo_dark.png" alt="kkszki_logo_dark" id="header-logo"></a>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- --------------- NAVIGÁCIÓS MENÜ ------------- -->
+            <nav>
+                <a href="index.html" class="navmenu">Főoldal</a>
+                <a href="orarendem.html" class="navmenu">Órarendem</a>
+                <a href="galeria.html" class="navmenu">Galéria</a>
+                <a href="radio.html" class="navmenu">Rádió</a>
+                <a href="keplink.html" class="navmenu">Ősz feladat</a>
+                <a href="listak.html" class="navmenu">Listák</a>
+                <a href="urlap.html" class="navmenu">Űrlap</a>
+            </nav>
+            <!-- --------------------------------------------- -->
+
+            <hr>
+        </header>
+
+        <section>
+            <p style="color: red;">Figyelem! Ez az oldal még fejlesztés alatt áll!</p>
+            
+            
+            
+            <!-- ez a fenti cucc a kikapcs gomb designje-->
+            <h2 id="radioValaszto">Rádió</h2>
+            <h2 id="nowPlaying">Rádió választó</h2>
+
+            <!-- Rádió választó -->
+            <div id="radioSelector">
+              <div class="radio-logos">
+                <img src="https://cdn.nwmgroups.hu/s/img/i/1806/20180614retro-radio-logo.jpg"
+                     alt="Retró Rádió" onclick="playRadio('https://icast.connectmedia.hu/5002/live.mp3', 'Retró Rádió', 'https://cdn.nwmgroups.hu/s/img/i/1806/20180614retro-radio-logo.jpg')">
+                <img src="https://ekasoft.ro/online-magyar-radiok/img/radios/petofiradio-1.jpg"
+                     alt="Petőfi Rádió" onclick="playRadio('https://icast.connectmedia.hu/4738/mr2.mp3', 'Petőfi Rádió', 'https://ekasoft.ro/online-magyar-radiok/img/radios/petofiradio-1.jpg')">
+                <img src="https://slagerfm.hu/wp-content/uploads/2022/02/slagerfm_logo-300x190.png"
+                     alt="Sláger FM" onclick="playRadio('https://slagerfm.netregator.hu:7813/slagerfm128.mp3', 'Sláger FM', 'https://slagerfm.hu/wp-content/uploads/2022/02/slagerfm_logo-300x190.png')">
+                <img src="https://myonlineradio.hu/public/uploads/radio_img/radio-m/play_250_250.webp"
+                     alt="Rádió M" onclick="playRadio('https://stream.42netmedia.com:8443/radiom', 'Rádió M', 'https://myonlineradio.hu/public/uploads/radio_img/radio-m/play_250_250.webp')">
+              </div>
+            </div>
+          
+            <!-- Most hallgatott rádió -->
+            
+            <div id="menudiv">
+                
+                <!-- Rádió ikonja -->
+                <div id="radioLogo"><img id="radioLogoImg" src="" alt="Rádió logó" style="display: none;"></div>
+
+                <div id="radioControls">
+                    <div id="controlmenu">
+                        <h2 id="vezerlopult">Vezérlőpult</h2>
+                
+                        <h3>Hangerő:</h3>
+                        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1"> <span id="volumeValue">100%</span>
+                        <button id="radioStopButton" onclick="stopRadio()">Kikapcsolás</button>
+                    </div>
+                
+                </div>
+            </div>
+            
+
+          
+            <!-- Kezelőfelület -->
+            
+          
+            <audio id="player"></audio>
+          
+            
+
+        </section>
+        
+    </div>
+
+    <footer>
+        <p>A weboldalt készítette: Tanczik Máté</p>
+    </footer>
+    
+    <script src="js/radio.js"></script>
+</body>
+</html>
