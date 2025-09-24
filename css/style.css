@@ -235,6 +235,11 @@ table#galeria {
             border: 2px solid rgb(79, 38, 5);
         }
 
+        img:hover {
+            transition: 0.3s;
+            transform: scale(1.03);
+        }
+
         p {
             margin: 0px;
             margin-bottom: 20px;
